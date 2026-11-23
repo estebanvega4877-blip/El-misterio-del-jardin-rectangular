@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El misterio del jardín rectangular</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #eaf1e8; color: #243326;
+      font-family: Georgia, "Times New Roman", serif; line-height: 1.65;
+    }
+    .page {
+      width: min(900px, calc(100% - 28px)); min-height: 1050px;
+      margin: 28px auto; padding: 62px 70px; background: #fffef9;
+      border: 1px solid #d7e0d2; border-radius: 12px;
+      box-shadow: 0 8px 28px #24332618; position: relative;
+      display: flex; flex-direction: column;
+    }
+    h1, h2 { color: #286044; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); text-align: center; margin-top: 80px; }
+    h2 { font-size: 2rem; margin-top: 0; }
+    .subtitle { text-align: center; font-size: 1.15rem; color: #657866; }
+    .meta { text-align: center; margin-top: 45px; padding: 18px; background: #eff6ed; border-radius: 10px; }
+    .story { font-size: 1.12rem; }
+    .equation {
+      margin: 24px auto; padding: 18px; max-width: 680px;
+      background: #eff6ed; border-left: 5px solid #4e8b62;
+      text-align: center; font: 1.35rem/1.7 "Trebuchet MS", Arial, sans-serif;
+      color: #183d29; border-radius: 6px;
+    }
+    .note { background: #fff6df; border-left: 5px solid #d6a43a; padding: 14px 18px; border-radius: 6px; }
+    .page-number { margin-top: auto; padding-top: 35px; text-align: center; color: #819083; font: 0.9rem Arial, sans-serif; }
+    .small { color: #667568; font-size: .95rem; }
+    @media (max-width: 600px) {
+      .page { padding: 32px 24px; min-height: 900px; }
+      h1 { margin-top: 45px; }
+      .story { font-size: 1.03rem; }
+    }
+    @media print {
+      body { background: white; }
+      .page { width: 100%; min-height: 26cm; margin: 0; border: 0; border-radius: 0; box-shadow: none; page-break-after: always; }
+      .page:last-child { page-break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="page">
+  <p class="subtitle">Una aventura matemática</p>
+  <h1>El misterio del jardín rectangular</h1>
+  <p class="subtitle">Una historia sobre el trinomio cuadrado perfecto</p>
+  <div class="meta">
+    <p><strong>Nombre de la historia:</strong> El misterio del jardín rectangular</p>
+    <p><strong>Caso de factorización:</strong> Trinomio cuadrado perfecto</p>
+    <p><strong>Creador:</strong> ChatGPT (Inteligencia Artificial)</p>
+  </div>
+  <p class="story" style="text-align:center; margin-top:55px;">
+    En el pueblo de Valle Verde había un terreno abandonado que todos llamaban
+    “el jardín misterioso”. Una estudiante llamada Daniela recibió el encargo
+    de descubrir sus medidas para que los vecinos pudieran recuperarlo.
+  </p>
+  <div class="page-number">Página 1 de 5</div>
+</section>
+
+<section class="page">
+  <h2>Página 2: Un terreno lleno de preguntas</h2>
+  <p class="story">
+    Una mañana, Daniela llegó al terreno acompañada por don Ernesto, el encargado
+    del parque. Él le explicó que, según los antiguos planos, el área del jardín
+    estaba representada por la expresión:
+  </p>
+  <div class="equation">x² + 12x + 36</div>
+  <p class="story">
+    —No tenemos las medidas exactas —dijo don Ernesto—, pero sabemos que esta
+    expresión representa el área de una figura cuadrada. Si logramos factorizarla,
+    podremos descubrir cómo se relacionan sus lados.
+  </p>
+  <p class="story">
+    Daniela observó los tres términos y recordó una regla que había estudiado
+    en clase: un trinomio cuadrado perfecto tiene dos términos que son cuadrados
+    perfectos y un término central que es el doble del producto de sus raíces.
+  </p>
+  <div class="note">
+    <strong>La misión:</strong> transformar el trinomio en el cuadrado de un
+    binomio para encontrar la medida del lado del jardín.
+  </div>
+  <div class="page-number">Página 2 de 5</div>
+</section>
+
+<section class="page">
+  <h2>Página 3: Las pistas del trinomio</h2>
+  <p class="story">
+    Daniela escribió la expresión en su cuaderno y revisó cada término.
+    Primero comprobó que el primer término, x², era el cuadrado de x.
+    Después observó que 36 era el cuadrado de 6.
+  </p>
+  <div class="equation">
+    x² = (x)²<br>
+    36 = 6²
+  </div>
+  <p class="story">
+    Luego verificó el término del centro. Multiplicó 2 por x y por 6:
+  </p>
+  <div class="equation">2 · x · 6 = 12x</div>
+  <p class="story">
+    ¡Coincidía exactamente con el término central! Daniela confirmó que los
+    tres términos cumplían las condiciones del trinomio cuadrado perfecto.
+  </p>
+  <p class="story">
+    Por eso, podía escribir la expresión como el cuadrado de un binomio:
+  </p>
+  <div class="equation">x² + 12x + 36 = (x + 6)²</div>
+  <div class="page-number">Página 3 de 5</div>
+</section>
+
+<section class="page">
+  <h2>Página 4: La medida escondida</h2>
+  <p class="story">
+    Don Ernesto encontró una nota en el plano: el área total del jardín era
+    de 144 metros cuadrados. Daniela sustituyó el trinomio factorizado por
+    su forma equivalente y planteó la ecuación:
+  </p>
+  <div class="equation">(x + 6)² = 144</div>
+  <p class="story">
+    Como el lado del jardín debía ser una medida positiva, Daniela calculó
+    la raíz cuadrada de ambos lados:
+  </p>
+  <div class="equation">
+    x + 6 = √144<br>
+    x + 6 = 12<br>
+    x = 12 − 6<br>
+    <strong>x = 6</strong>
+  </div>
+  <p class="story">
+    Ahora reemplazó x por 6 en la expresión del lado:
+  </p>
+  <div class="equation">x + 6 = 6 + 6 = 12 metros</div>
+  <p class="story">
+    Así descubrió que cada lado medía 12 metros. El terreno que parecía un
+    misterio tenía forma cuadrada y estaba listo para ser renovado.
+  </p>
+  <div class="page-number">Página 4 de 5</div>
+</section>
+
+<section class="page">
+  <h2>Página 5: El jardín vuelve a florecer</h2>
+  <p class="story">
+    Los vecinos se reunieron para limpiar el terreno, sembrar flores y colocar
+    pequeños árboles. Antes de comenzar, Daniela comprobó que el resultado fuera
+    correcto multiplicando las medidas:
+  </p>
+  <div class="equation">12 m × 12 m = 144 m²</div>
+  <p class="story">
+    El resultado coincidía con el área indicada en el plano. Don Ernesto felicitó
+    a Daniela por utilizar las matemáticas para resolver un problema real.
+    Desde ese día, el jardín dejó de ser un lugar misterioso y se convirtió
+    en el espacio favorito del pueblo.
+  </p>
+  <div class="note">
+    <strong>Lo que aprendió Daniela</strong>
+    <ul>
+      <li>Un trinomio cuadrado perfecto tiene la forma a² + 2ab + b².</li>
+      <li>Se factoriza como (a + b)².</li>
+      <li>En este problema: x² + 12x + 36 = (x + 6)².</li>
+      <li>El valor encontrado fue x = 6 y cada lado midió 12 metros.</li>
+    </ul>
+  </div>
+  <p class="small"><strong>Nombre:</strong> El misterio del jardín rectangular<br>
+  <strong>Caso:</strong> Trinomio cuadrado perfecto<br>
+  <strong>Creador:</strong> ChatGPT (Inteligencia Artificial)</p>
+  <div class="page-number">Página 5 de 5</div>
+</section>
+
+</body>
+</html>
